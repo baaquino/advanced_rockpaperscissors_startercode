@@ -23,8 +23,10 @@
 
 
 //FUNCTIONS
-
-
+$("#shoot").click(function(){
+        var roll = $("#chosen").val();
+        $("#result").append(roll);
+});
 
 // DOCUMENT READY FUNCTION
 
