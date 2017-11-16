@@ -23,10 +23,14 @@
 
 
 //FUNCTIONS
-$("#shoot").click(function(){
-        var roll = $("#chosen").val();
-        $("#result").append(roll);
-});
+
 
 // DOCUMENT READY FUNCTION
-
+$(document).ready(function(){
+   $("#shoot").click(function(){
+         var roll = $("#chosen").val();
+         $("#result").append(roll);
+         });
+   var rps = ["rock", "paper", "scissors"];
+   Math.floor(Math.random[rps]);
+});

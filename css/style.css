@@ -1,3 +1,10 @@
 img{ 
     width:500px;
+    padding:50px;
+}
+.col-md-12{
+    padding:50px;
+}
+p{
+    padding-top:30px;
 }
