@@ -28,9 +28,36 @@
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
    $("#shoot").click(function(){
-         var roll = $("#chosen").val();
-         $("#result").append(roll);
-         });
-   var rps = ["rock", "paper", "scissors"];
-   Math.floor(Math.random[rps]);
+         //var roll = $("#chosen").val();
+         //$("#result").append(roll);
+        var rps = ["rock", "paper", "scissors"];
+        var comAnswer = Math.floor(Math.random()*rps.length);
+        
+         
+         var player1 = $("#chosen").val();
+         var player2 = (rps[comAnswer])
+    
+    var winnerText = "not sure yet";
+    
+    
+    if((player1 === "rock" && player2 === "rock") || 
+    (player1 === "paper" && player2 === "paper") ||  
+    (player1 === "scissors" && player2 === "scissors")){
+        winnerText = "It's a tie!";
+    } else if ((player1 === "paper" && player2 === "rock") || 
+    (player1 === "scissors" && player2 === "paper") || 
+    (player1 === "rock" && player2 === "scissors")){
+        winnerText = "You win!";
+    } else if ((player1 === "scissors" && player2 === "rock") || 
+    (player1 === "rock" && player2 === "paper") || 
+    (player1 === "paper" && player2 === "scissors")){
+        winnerText = "Computer wins!";
+    } 
+    console.log(player2);
+    
+    $("#theOne").text(winnerText);
+
+        });
+  
+   
 });
